@@ -37,7 +37,32 @@ step 3 :- go to Ec2 service underneath we select as volume section and create an
 step 4 :- go to log groups of cloudwatch service we see the lambda fuction is triggered.
 
 
-![Screenshot 2024-04-09 095707](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/29147aac-aad1-4641-8b27-d717b642d234)
+![1 dQNdmQg4LlAyxR9kUxNrAA](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/57a6eba5-a21b-49c2-8684-4c1e15e2c643)
+
+
+
+add following code to lambda function
+
+![Screenshot 2024-04-09 215607](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/7d95af4e-247d-44b8-9a24-d0f0032680bd)
+
+and remove the ebs volume that we created and again recreate the ebs volume so that lambda fuction is automatically triggered and we get an detailed logs about the ebs volume.
+
+![1 7Ox39axVQDXEFWvbWxBwug](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/f19ac916-5587-4dcf-a925-a013500f619e)
+
+step 5 :- Go to IAM service and create an inline policy for that role , select service as ec2 and for actions allowed we select ‘volume’ and for that we add ‘describe volume’ and ‘modify volume’ and create policy.
+
+![1 z3ENqRtib6NKsrp0mvw_UQ](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/b6ee6848-99ed-47ee-b03b-32d143563db4)
+
+step 6 :- so we can write an final lambda fuction as below ,
+
+
+![Screenshot 2024-04-09 095804](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/06b45db1-faf2-43e4-be24-468de8ad06ad)
+
+and remove the ebs volume that we created and again recreate the ebs volume so that lambda fuction is automatically triggered.so finally we see the output as ebs volume is converted to gp2 to gp3 type.
+
+
+
+
 
 
 
