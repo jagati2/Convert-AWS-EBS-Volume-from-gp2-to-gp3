@@ -28,10 +28,9 @@ give name as per your requirement and creating role.
 ![1 uwyW7w0ST8r4LdEsuVJLRg](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/cfdc18a0-e387-4b8d-8437-8bbc826c1bb9)
 
 
-step 3 :- go to Ec2 service underneath we select as volume section and create an volume (by default create an gp2 ebs volume).
+step 3 :- go to Ec2 service underneath we select as volume section and create an volume and create gp2 ebs volume).
 
-
-![Screenshot 2024-04-09 093503](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/f6667308-3757-42ba-bea2-9c383bf75c58)
+![1 oel2tmYyNN_0mI_tq6ViCA](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/9cdbb6d9-2383-42ea-9587-568060769215)
 
 
 step 4 :- go to log groups of cloudwatch service we see the lambda fuction is triggered.
@@ -60,6 +59,7 @@ step 6 :- so we can write an final lambda fuction as below ,
 
 and remove the ebs volume that we created and again recreate the ebs volume so that lambda fuction is automatically triggered.so finally we see the output as ebs volume is converted to gp2 to gp3 type.
 
+![1 TKq2hku2MTk-WuqPIX0DMw](https://github.com/jagati2/Convert-AWS-EBS-Volume-from-gp2-to-gp3/assets/105737471/dbe8293f-4042-4a17-ae84-fc417ed566b0)
 
 
 
